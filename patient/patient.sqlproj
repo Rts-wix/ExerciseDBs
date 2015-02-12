@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>patient</Name>
+    <Name>Patient</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{82a72932-dc35-4166-bab8-afc7054388f3}</ProjectGuid>
@@ -25,6 +25,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>Danish_Norwegian_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <TargetDatabase>Patient</TargetDatabase>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -69,5 +70,8 @@
     <Build Include="dbo\Tables\conducts.sql" />
     <Build Include="dbo\Tables\patient.sql" />
     <Build Include="dbo\Tables\physician.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="patient.publish.xml" />
   </ItemGroup>
 </Project>

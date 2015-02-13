@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{a18e69df-c05b-4a91-aa56-bd9d42b53597}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -61,18 +61,21 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="bin\" />
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="insertDemoData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Employees.publish.xml" />
+    <None Include="Employees_1.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\projects.sql" />
     <Build Include="dbo\Tables\workson.sql" />
     <Build Include="dbo\Tables\employees.sql" />
     <Build Include="dbo\Tables\departments.sql" />
-    <None Include="Employees_15.publish.sql" />
+    <None Include="bin\Debug\Employees_15.publish.sql" />
   </ItemGroup>
 </Project>

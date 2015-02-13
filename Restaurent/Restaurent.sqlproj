@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{39d87e59-2044-470b-b163-50db9e456abd}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -75,6 +75,7 @@
     <Build Include="dbo\Tables\orders.sql" />
     <Build Include="dbo\Views\menuitems.sql" />
     <PostDeploy Include="insertDemoData.sql" />
+    <None Include="Restaurent_2.publish.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Restaurent.publish.xml" />

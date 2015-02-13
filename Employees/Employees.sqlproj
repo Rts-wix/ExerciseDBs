@@ -73,6 +73,6 @@
     <Build Include="dbo\Tables\workson.sql" />
     <Build Include="dbo\Tables\employees.sql" />
     <Build Include="dbo\Tables\departments.sql" />
-    <Build Include="bin\Debug\Employees_15.publish.sql" />
+    <None Include="Employees_15.publish.sql" />
   </ItemGroup>
 </Project>

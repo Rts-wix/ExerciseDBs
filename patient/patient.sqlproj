@@ -70,6 +70,10 @@
     <Build Include="dbo\Tables\conducts.sql" />
     <Build Include="dbo\Tables\patient.sql" />
     <Build Include="dbo\Tables\physician.sql" />
+    <PostDeploy Include="insertDemoData.sql">
+      <ApplicationScope>Auto</ApplicationScope>
+    </PostDeploy>
+    <Build Include="patient_1.publish.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="patient.publish.xml" />
